@@ -4,11 +4,11 @@ import washImg from '../assets/wwash.jpg';
 import treatmentImg from '../assets/wtreatment.jpg';
 import ipondoImg from '../assets/iphondo.jpg'; // <-- CHANGE THIS FROM .jpeg TO .jpg
 
-// Dreadlocks images (using the files starting with 'd' from your sidebar)
-import locStylesImg from '../assets/dstyles.jpeg';
-import locWashImg from '../assets/dwash.jpg';
-import locTreatmentImg from '../assets/dtreatment.jpeg';
-import locExtensionImg from '../assets/dextension.jpeg';
+// Dreadlocks images - Check these extensions carefully against your sidebar!
+import locStylesImg from '../assets/dstyles.jpg';       // CHANGE FROM .jpeg TO .jpg
+import locWashImg from '../assets/dwash.jpg';           // Keeps .jpg
+import locTreatmentImg from '../assets/dtreatment.jpeg'; // Keeps .jpeg
+import locExtensionImg from '../assets/dextension.jpeg'; // Keeps .jpeg
 
 export const STYLISTS = {
   Siba: { name: 'Siba', phone: '27810966434' },
