@@ -1,3 +1,13 @@
+// 1. Import your local images from the assets folder
+import installationImg from '../assets/installation.jpg';
+import washImg from '../assets/wwash.jpg';
+import treatmentImg from '../assets/wtreatment.jpg';
+import ipondoImg from '../assets/iphondo.jpg';
+import locStylesImg from '../assets/loc-styles.jpg';
+import locWashImg from '../assets/loc-wash.jpg';
+import locTreatmentImg from '../assets/loc-treatment.jpg';
+import locExtensionImg from '../assets/loc-extension.jpg';
+
 export const STYLISTS = {
   Siba: {
     name: 'Siba',
@@ -27,7 +37,7 @@ export const SALON_SERVICES = [
     type: 'locs',
     items: [
       { name: 'Dreadlocks styles', price: 350, duration: '2h', img: 'https://i.pinimg.com/564x/af/91/60/af91607030590390d5374fd4c55ec397.jpg' },
-      { name: 'Dreadlocks wash', price: 120, duration: '45m', img: 'https://www.reddit.com/r/Dreadlocks/comments/1iuaufq/how_often_do_you_shampoo_your_dreads/' },
+      { name: 'Dreadlocks wash', price: 120, duration: '45m', img: 'https://preview.redd.it/how-often-do-you-shampoo-your-dreads-v0-hb0a0lmpadke1.jpeg?width=1080&crop=smart&auto=webp&s=1246f4096caec547c34cee45f97f9d48821ab7d2' },
       { name: 'Dreadlocks treatment', price: 180, duration: '1h', img: 'https://images.fresha.com/locations/location-profile-images/592246/5221122/14ac0c64-f954-42b5-9a2c-a1c52fbef59a.jpg?class=venue-gallery-mobile&f_width=3840' },
       { name: 'Dreadlocks extension', price: 1200, duration: '5h', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMm8PvNgXgRnH27-JFmXzZrl-q-s1TgfXSvA&s' }
     ]
