@@ -1,12 +1,8 @@
-// 1. Import your local images from the assets folder
-import installationImg from '../assets/installation.jpg';
-import washImg from '../assets/wwash.jpg';
-import treatmentImg from '../assets/wtreatment.jpg';
-import ipondoImg from '../assets/iphondo.jpg';
-import locStylesImg from '../assets/loc-styles.jpg';
-import locWashImg from '../assets/loc-wash.jpg';
-import locTreatmentImg from '../assets/loc-treatment.jpg';
-import locExtensionImg from '../assets/loc-extension.jpg';
+// 1. Import your local images with the exact matching extensions from your sidebar
+import installationImg from '../assets/installation.jpg'; // This one is .jpg in your sidebar
+import washImg from '../assets/wwash.jpg';                // This one is .jpg in your sidebar
+import treatmentImg from '../assets/wtreatment.jpg';      // This one is .jpg in your sidebar
+import ipondoImg from '../assets/iphondo.jpeg';           // CHANGED TO .jpeg to match your sidebar exactly!
 
 export const STYLISTS = {
   Siba: {
@@ -25,10 +21,10 @@ export const SALON_SERVICES = [
     title: 'Hair Installation',
     type: 'weave',
     items: [
-      { name: 'Installation', price: 450, duration: '2h 30m', img: 'https://frohub.com/what-are-hair-weaves/' },
-      { name: 'Weave Wash', price: 150, duration: '1h', img: 'https://www.youtube.com/watch?v=Kn4JSP_7O00' },
-      { name: 'Treatment', price: 200, duration: '45m', img: 'https://www.volure.co.za/products/long-peruvian-weave?srsltid=AfmBOop8l3A2aFhs4waQQ4kV8G2h4nPxXaV3JDyptBiqeNxFQn4HqYHt' },
-      { name: 'iPondo', price: 250, duration: '1h 30m', img: 'https://www.instagram.com/p/CKY0A6wAFZ4/' }
+      { name: 'Installation', price: 450, duration: '2h 30m', img: installationImg },
+      { name: 'Weave Wash', price: 150, duration: '1h', img: washImg },
+      { name: 'Treatment', price: 200, duration: '45m', img: treatmentImg },
+      { name: 'iPondo', price: 250, duration: '1h 30m', img: ipondoImg }
     ]
   },
   {
@@ -37,7 +33,7 @@ export const SALON_SERVICES = [
     type: 'locs',
     items: [
       { name: 'Dreadlocks styles', price: 350, duration: '2h', img: 'https://i.pinimg.com/564x/af/91/60/af91607030590390d5374fd4c55ec397.jpg' },
-      { name: 'Dreadlocks wash', price: 120, duration: '45m', img: 'https://preview.redd.it/how-often-do-you-shampoo-your-dreads-v0-hb0a0lmpadke1.jpeg?width=1080&crop=smart&auto=webp&s=1246f4096caec547c34cee45f97f9d48821ab7d2' },
+      { name: 'Dreadlocks wash', price: 120, duration: '45m', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxuqqw0cD-3kIwUbAiFOKQnOwDRYGpCSH7AQ&s' },
       { name: 'Dreadlocks treatment', price: 180, duration: '1h', img: 'https://images.fresha.com/locations/location-profile-images/592246/5221122/14ac0c64-f954-42b5-9a2c-a1c52fbef59a.jpg?class=venue-gallery-mobile&f_width=3840' },
       { name: 'Dreadlocks extension', price: 1200, duration: '5h', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMm8PvNgXgRnH27-JFmXzZrl-q-s1TgfXSvA&s' }
     ]
