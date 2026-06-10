@@ -2,7 +2,7 @@
 import installationImg from '../assets/installation.jpg';
 import washImg from '../assets/wwash.jpg';
 import treatmentImg from '../assets/wtreatment.jpg';
-import ipondoImg from '../assets/iphondo.jpg';
+import ipondoImg from '../assets/iphondo.jpg'; // <-- CHANGE THIS FROM .jpeg TO .jpg
 
 // Dreadlocks images (using the files starting with 'd' from your sidebar)
 import locStylesImg from '../assets/dstyles.jpeg';
