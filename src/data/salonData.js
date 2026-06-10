@@ -1,15 +1,3 @@
-// Weave installation images
-import installationImg from '../assets/installation.jpg';
-import washImg from '../assets/wwash.jpg';
-import treatmentImg from '../assets/wtreatment.jpg';
-import ipondoImg from '../assets/iphondo.jpg'; // <-- CHANGE THIS FROM .jpeg TO .jpg
-
-// Dreadlocks images - All four are actually .jpeg files in your sidebar!
-import locStylesImg from '../assets/dstyles.jpg';       
-import locWashImg from '../assets/dwash.jpeg';          // <-- CHANGE THIS FROM .jpg TO .jpeg
-import locTreatmentImg from '../assets/dtreatment.jpeg'; 
-import locExtensionImg from '../assets/dextension.jpeg';
-
 export const STYLISTS = {
   Siba: { name: 'Siba', phone: '27810966434' },
   Melz: { name: 'Melz', phone: '27684628614' }
@@ -21,10 +9,10 @@ export const SALON_SERVICES = [
     title: 'Hair Installation',
     type: 'weave',
     items: [
-      { name: 'Installation', price: 450, duration: '2h 30m', img: installationImg },
-      { name: 'Weave Wash', price: 150, duration: '1h', img: washImg },
-      { name: 'Treatment', price: 200, duration: '45m', img: treatmentImg },
-      { name: 'iPondo', price: 250, duration: '1h 30m', img: ipondoImg }
+      { name: 'Installation', price: 450, duration: '2h 30m', img: '/installation.jpg' },
+      { name: 'Weave Wash', price: 150, duration: '1h', img: '/wwash.jpg' },
+      { name: 'Treatment', price: 200, duration: '45m', img: '/wtreatment.jpg' },
+      { name: 'iPondo', price: 250, duration: '1h 30m', img: '/iphondo.jpg' }
     ]
   },
   {
@@ -32,10 +20,10 @@ export const SALON_SERVICES = [
     title: 'Dreadlocks Services',
     type: 'locs',
     items: [
-      { name: 'Dreadlocks styles', price: 350, duration: '2h', img: locStylesImg },
-      { name: 'Dreadlocks wash', price: 120, duration: '45m', img: locWashImg },
-      { name: 'Dreadlocks treatment', price: 180, duration: '1h', img: locTreatmentImg },
-      { name: 'Dreadlocks extension', price: 1200, duration: '5h', img: locExtensionImg }
+      { name: 'Dreadlocks styles', price: 350, duration: '2h', img: '/dstyles.jpg' },
+      { name: 'Dreadlocks wash', price: 120, duration: '45m', img: '/wash.jpeg' },
+      { name: 'Dreadlocks treatment', price: 180, duration: '1h', img: '/dtreatment.jpeg' },
+      { name: 'Dreadlocks extension', price: 1200, duration: '5h', img: '/dextension.jpeg' }
     ]
   }
 ];
