@@ -2,7 +2,7 @@ import React from 'react';
 import { MessageCircle } from 'lucide-react';
 
 export default function BookingPanel({ selectedService }) {
-  const businessPhone = '27810966434'; 
+  const businessPhone = '27684628614'; 
   const whatsappBaseUrl = `https://wa.me/${businessPhone}`;
   
   const textMessage = encodeURIComponent(
