@@ -3,11 +3,9 @@ import React from 'react';
 export default function Hero() {
   return (
     <header className="relative bg-neutral-950 text-white py-24 px-4 overflow-hidden border-b border-neutral-900">
-      {/* Subtle background luxury ambient lighting */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neutral-800/20 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
-        {/* Centered Business Badge Overlay */}
         <div className="mx-auto w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border border-neutral-800 shadow-2xl bg-neutral-900 flex items-center justify-center">
           <img 
             src="/logo.jpeg" 

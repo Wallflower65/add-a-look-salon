@@ -6,7 +6,6 @@ export default function FooterStats() {
     <footer className="bg-neutral-950 text-neutral-400 text-xs py-16 px-4 mt-20 border-t border-neutral-900 font-sans tracking-wide">
       <div className="max-w-5xl mx-auto space-y-12">
         
-        {/* Sleek Minimalist Core Pillars */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left border-b border-neutral-900 pb-12">
           <div className="space-y-1">
             <div className="flex items-center justify-center md:justify-start gap-2 text-white font-bold uppercase tracking-wider text-[11px]">
@@ -41,18 +40,16 @@ export default function FooterStats() {
           </div>
         </div>
 
-        {/* Studio Info & Developer Advertising Area */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-2 text-[11px] uppercase tracking-widest text-neutral-500">
           <div>
             © {new Date().getFullYear()} ADD-A-LOOK DREADLOCK PARLOUR. ALL RIGHTS RESERVED.
           </div>
           
-          {/* Professional Developer Self-Promotion Link */}
           <div className="flex items-center gap-1.5 bg-neutral-900/60 border border-neutral-800/60 px-3 py-1.5 rounded-lg text-neutral-400 hover:text-white transition-colors group">
             <Code2 className="w-3.5 h-3.5" />
             <span>Designed & Built by</span>
             <a 
-              href="https://phaphamaniportfolio.netlify.app/" // Links to your live tech profile
+              href="https://phaphamaniportfolio.netlify.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="font-bold text-white border-b border-transparent hover:border-white flex items-center gap-0.5 transition-all"

@@ -6,7 +6,7 @@ export default function BookingPanel({ selectedService }) {
   const whatsappBaseUrl = `https://wa.me/${businessPhone}`;
   
   const textMessage = encodeURIComponent(
-    `Hello ADD-A-LOOK, I would love to book an appointment for "${selectedService || 'a loc session'}"! Could you please let me know your next available opening?`
+    `Hello Melz, I would love to book an appointment for "${selectedService || 'a loc session'}"! Could you please let me know your next available opening?`
   );
   const checkoutUrl = `${whatsappBaseUrl}?text=${textMessage}`;
 

@@ -30,7 +30,7 @@ export default function ServiceCard({ category, selectedService, onSelectService
                 </div>
                 <div>
                   <p className="font-bold text-xs tracking-wide uppercase md:text-sm">{item.name}</p>
-                  <p className={`text-[10px] tracking-wider font-mono ${isSelected ? 'text-neutral-400' : 'text-neutral-400'}`}>
+                  <p className="text-[10px] tracking-wider font-mono text-neutral-400">
                     {item.duration}
                   </p>
                 </div>

@@ -5,12 +5,10 @@ import { LOOKBOOK_ITEMS } from '../data/salonData';
 export default function Lookbook({ onSelectService }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeFilter, setActiveFilter] = useState('all');
-  
-  // Track the active image index for each lookbook item independently
   const [imageIndices, setImageIndices] = useState({});
 
   const handleNextImage = (itemId, maxImages, e) => {
-    e.stopPropagation(); // Stops card selection event
+    e.stopPropagation(); 
     setImageIndices(prev => ({
       ...prev,
       [itemId]: ((prev[itemId] || 0) + 1) % maxImages
@@ -51,7 +49,6 @@ export default function Lookbook({ onSelectService }) {
         </div>
       </div>
 
-      {/* Grid Display Configuration */}
       {filteredCatalog.length > 0 ? (
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {filteredCatalog.map((look) => {
@@ -63,7 +60,6 @@ export default function Lookbook({ onSelectService }) {
                 key={look.id} 
                 className="group bg-neutral-50 rounded-xl overflow-hidden border border-neutral-100 flex flex-col justify-between hover:shadow-sm transition-all"
               >
-                {/* Image Slider Wrapper Frame */}
                 <div className="relative aspect-square overflow-hidden bg-neutral-200">
                   <img
                     src={look.images[currentImgIndex]}
@@ -71,7 +67,6 @@ export default function Lookbook({ onSelectService }) {
                     className="w-full h-full object-cover object-center transition-all duration-300"
                   />
                   
-                  {/* Badge displaying multiple items are available */}
                   {hasMultipleImages && (
                     <span className="absolute top-3 left-3 bg-neutral-950/80 backdrop-blur-sm text-white text-[10px] uppercase tracking-widest px-2 py-1 rounded flex items-center gap-1">
                       <Layers className="w-3 h-3" /> Browse Lookbook
@@ -82,7 +77,6 @@ export default function Lookbook({ onSelectService }) {
                     R{look.price}
                   </span>
 
-                  {/* Left / Right Slider Navigation Controls */}
                   {hasMultipleImages && (
                     <div className="absolute inset-x-2 top-1/2 -translate-y-1/2 flex justify-between opacity-0 group-hover:opacity-100 transition-opacity">
                       <button

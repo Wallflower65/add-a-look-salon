@@ -25,7 +25,7 @@ export const SALON_SERVICES = [
         name: 'Woolen/Brazilian twist', 
         price: 600, 
         duration: '3h', 
-        description: 'Expertly twisting your hair utilizing premium wool extensions or protective Brazilian wraps for an ultra-clean, stylish, and long-lasting textured protective look.',
+        description: 'Expertly twisting your hair utilising premium wool extensions or protective Brazilian wraps for an ultra-clean, stylish, and long-lasting textured protective look.',
         images: [
           '/brazilian-twist-1.jpg', 
           '/brazilian-twist-2.jpg', 
@@ -101,6 +101,6 @@ export const LOOKBOOK_ITEMS = SALON_SERVICES.flatMap(category =>
     price: item.price,
     duration: item.duration,
     images: item.images,
-    description: item.description // Pulls the rich tailored text straight into your interactive catalog cards
+    description: item.description
   }))
 );
