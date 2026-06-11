@@ -9,8 +9,8 @@ Experience the production deployment here: [add-a-look-salon.netlify.app](https:
 
 * **Bypassing Asset Compilation Bottlenecks:** Transitioned asset management from source dependencies to an un-compiled asset layout inside the root public tree. This completely eliminated platform-specific case-sensitivity resolution errors (`exit code 2`) during the remote server assembly stage.
 * **State-Driven Multi-Image Catalog (Slider UI):** Engineered an independent local state indexing map within the Lookbook component. Users can seamlessly browse through comprehensive high-resolution lookbook portfolios per service item without breaking layout integrity or triggering parent component lifecycle updates.
-* **Zero-Overhead Checkout Router:** Built a lightweight scheduling integration that dynamically sanitizes selection data, calculates local pricing values, and deep-links directly into the centralized business WhatsApp API terminal. This eliminates the need for expensive, high-maintenance database infrastructures for small-scale operations.
-* **Recruiter-Grade Clean Code Architecture:** Developed entirely using modern functional React design, strict structural layout boundaries, and scalable data-mapping models—ensuring zero redundant inline comments or boilerplate dead zones.
+* **Zero-Overhead Checkout Router:** Built a lightweight scheduling integration that dynamically sanitises selection data, calculates local pricing values, and deep-links directly into the centralised business WhatsApp API terminal. This eliminates the need for expensive, high-maintenance database infrastructures for small-scale operations.
+* **Recruiter-Grade Clean Code Architecture:** Developed entirely using modern functional React design, strict structural layout boundaries, and scalable data-mapping models, ensuring zero redundant inline comments or boilerplate dead zones.
 
 ## Tech Stack & Architectural Map
 
