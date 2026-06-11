@@ -1,29 +1,86 @@
-export const STYLISTS = {
-  Siba: { name: 'Siba', phone: '27810966434' },
-  Melz: { name: 'Melz', phone: '27684628614' }
-};
-
 export const SALON_SERVICES = [
   {
-    id: 'installation',
-    title: 'Hair Installation',
-    type: 'weave',
+    id: 'styling-maintenance',
+    title: 'Styling & Maintenance',
+    type: 'maintenance',
     items: [
-      { name: 'Installation', price: 450, duration: '2h 30m', img: '/installation.jpg' },
-      { name: 'Weave Wash', price: 150, duration: '1h', img: '/wwash.jpg' },
-      { name: 'Treatment', price: 200, duration: '45m', img: '/wtreatment.jpg' },
-      { name: 'iPondo', price: 250, duration: '1h 30m', img: '/iphondo.jpg' }
+      { 
+        name: 'Wax & style', 
+        price: 300, 
+        duration: '1h 45m', 
+        images: [
+          '/styles-1.jpg', 
+          '/styles-2.jpg', 
+          '/styles-3.jpg', 
+          '/styles-4.jpg', 
+          '/styles-5.jpg', 
+          '/styles-6.jpg', 
+          '/styles-7.jpg', 
+          '/styles-8.jpg', 
+          '/styles-9.jpg'
+        ] 
+      },
+      { 
+        name: 'Woolen/Brazilian twist', 
+        price: 600, 
+        duration: '3h', 
+        images: [
+          '/brazilian-twist-1.jpg', 
+          '/brazilian-twist-2.jpg', 
+          '/brazilian-twist-3.jpg', 
+          '/brazilian-twist-4.jpg'
+        ] 
+      },
+      { 
+        name: 'Crochet', 
+        price: 350, 
+        duration: '1h 30m', 
+        images: ['/crochet-1.jpg', '/crochet-2.jpg'] 
+      }
     ]
   },
   {
-    id: 'dreadlocks',
-    title: 'Dreadlocks Services',
-    type: 'locs',
+    id: 'extensions-color',
+    title: 'Extensions & Chemical Work',
+    type: 'chemical',
     items: [
-      { name: 'Dreadlocks styles', price: 350, duration: '2h', img: '/dstyles.jpg' },
-      { name: 'Dreadlocks wash', price: 120, duration: '45m', img: '/wash.jpeg' },
-      { name: 'Dreadlocks treatment', price: 180, duration: '1h', img: '/dtreatment.jpeg' },
-      { name: 'Dreadlocks extension', price: 1200, duration: '5h', img: '/dextension.jpeg' }
+      { 
+        name: 'Extensions', 
+        price: 1200, 
+        duration: '5h', 
+        images: ['/extension-1.jpg', '/extension-2.jpg', '/extension-3.jpg'] 
+      },
+      { 
+        name: 'Hair color', 
+        price: 400, 
+        duration: '2h', 
+        images: ['/hair-color-1.jpg', '/hair-color-2.jpg', '/hair-color-3.jpg', '/hair-color-4.jpg'] 
+      }
+    ]
+  },
+  {
+    id: 'starter-options',
+    title: 'Starter Services & Coloring',
+    type: 'starters',
+    items: [
+      { 
+        name: 'Crochet Start', 
+        price: 300, 
+        duration: '2h 30m', 
+        images: ['/crochet-start-1.jpg', '/crochet-start-2.jpg'] 
+      },
+      { 
+        name: 'Wax Start', 
+        price: 300, 
+        duration: '2h', 
+        images: ['/wax-start.jpg'] 
+      },
+      { 
+        name: 'Dye Only (Black)', 
+        price: 300, 
+        duration: '1h 15m', 
+        images: ['/black-dye.jpeg', '/black-dye-2.jpeg'] 
+      }
     ]
   }
 ];
@@ -35,7 +92,7 @@ export const LOOKBOOK_ITEMS = SALON_SERVICES.flatMap(category =>
     category: category.type,
     price: item.price,
     duration: item.duration,
-    image: item.img,
-    description: `Professional premium ${item.name.toLowerCase()} service tailored perfectly at ADD-A-LOOK parlour.`
+    images: item.images,
+    description: `Premium professional ${item.name.toLowerCase()} session tailored for healthy dreadlock care at ADD-A-LOOK.`
   }))
 );

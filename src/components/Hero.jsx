@@ -1,23 +1,33 @@
 import React from 'react';
-import { MapPin } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <header className="relative bg-gradient-to-tr from-teal-500 via-cyan-400 to-amber-200 text-white py-24 px-6 text-center shadow-md">
-      <div className="max-w-4xl mx-auto space-y-4">
-        <span className="bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-semibold tracking-wider uppercase">
-          Your Look • Your Style • Our Passion
-        </span>
-        <h1 className="text-5xl md:text-7xl font-black tracking-tight drop-shadow-sm">
-          ADD-A-LOOK
-        </h1>
-        <p className="text-xl md:text-2xl font-medium opacity-90 max-w-xl mx-auto">
-          Premium Hair Installation & Dreadlocks Parlour
-        </p>
-        <div className="flex flex-wrap justify-center gap-4 pt-4 text-sm font-medium">
-          <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-            <MapPin className="w-4 h-4 text-amber-200" /> R476 Dyalvani Street, Site B, Khayelitsha
-          </span>
+    <header className="relative bg-neutral-950 text-white py-24 px-4 overflow-hidden border-b border-neutral-900">
+      {/* Subtle background luxury ambient lighting */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neutral-800/20 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
+        {/* Centered Business Badge Overlay */}
+        <div className="mx-auto w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border border-neutral-800 shadow-2xl bg-neutral-900 flex items-center justify-center">
+          <img 
+            src="/logo.jpeg" 
+            alt="ADD-A-LOOK Dreadlock Parlour" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        <div className="space-y-4">
+          <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white font-sans uppercase">
+            ADD-A-LOOK
+          </h1>
+          <div className="w-12 h-0.5 bg-white mx-auto my-2" />
+          <p className="text-sm md:text-base text-neutral-400 max-w-md mx-auto uppercase tracking-widest font-light">
+            Dreadlock Parlour
+          </p>
+        </div>
+
+        <div className="text-xs text-neutral-500 font-mono tracking-widest uppercase pt-4 border-t border-neutral-900 max-w-xs mx-auto">
+          R476 Dyalvani Street • Site B • Khayelitsha
         </div>
       </div>
     </header>
