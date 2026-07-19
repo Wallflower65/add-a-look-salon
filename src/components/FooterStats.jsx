@@ -4,7 +4,7 @@ import { ShieldCheck, Award, Sparkles, Code2, ArrowUpRight, MapPin, Clock, Faceb
 export default function FooterStats() {
   const salonLocation = "Add-A-Look Salon, Cape Town, South Africa";
   
-  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.279774641887!2d18.4231649!3d-33.9242948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc500f00000001%3A0x0!2sCape%20Town!5e0!3m2!1sen!2sza!4v1718210000000!5m2!1sen!2sza";
+  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.2798835824903!2d18.4231649!3d-33.9242948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc500f00000001%3A0x633d3c8faebfbbcb!2sAdd-A-Look%20Salon!5e0!3m2!1sen!2sza!4v1718210000000!5m2!1sen!2sza";
 
   return (
     <footer className="bg-neutral-950 text-neutral-400 text-xs py-16 px-4 mt-20 border-t border-neutral-900 font-sans tracking-wide">
@@ -68,7 +68,7 @@ export default function FooterStats() {
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-neutral-500 flex-shrink-0" />
-                <span>Mon - Fri: Open Daily (Based on Appointment)</span>
+                <span>Mon - Sun: Open Daily (Based on Appointment)</span>
               </div>
             </div>
 
