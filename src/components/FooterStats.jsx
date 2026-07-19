@@ -4,7 +4,7 @@ import { ShieldCheck, Award, Sparkles, Code2, ArrowUpRight, MapPin, Clock, Faceb
 export default function FooterStats() {
   const salonLocation = "Add-A-Look Salon, Cape Town, South Africa";
   
-  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.3914849642597!2d18.6654228!3d-33.9953288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc459e74fb9b6b%3A0x643dc52c93046f8c!2sAdd%20A%20Look%20Dreadlocks1!5e0!3m2!1sen!2sza!4v1718210000000!5m2!1sen!2sza";
+  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3307.391!2d18.665423!3d-33.995329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDU5JzQzLjIiUyAxOMKwMzknNTUuNSJF!5e0!3m2!1sen!2sza!4v1718210000000!5m2!1sen!2sza";
 
   return (
     <footer className="bg-neutral-950 text-neutral-400 text-xs py-16 px-4 mt-20 border-t border-neutral-900 font-sans tracking-wide">
